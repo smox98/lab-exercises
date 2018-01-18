@@ -1,7 +1,7 @@
 ## Part 1: Debugging
 
 my.num <- 6
-initials <- "?. ?."
+initials <- "S. M."
 
 my.vector <- c(my.num, initials)
 
@@ -9,7 +9,7 @@ my.vector <- c(my.num, initials)
 vector.sum <- sum(my.vector)
 
 # Describe why this doesn't work: 
-# 
+# my.vector is a character type and that type cannot be used in sum
 
 install.packages("stringr")
 
@@ -18,12 +18,12 @@ my.line <- "Hey, hey, this is the library"
 print(str_length(my.line))
 
 # Describe why this doesn't work: 
-# 
+# library("stringr") is not included under install.packages("stringr")
 
 said.the.famous <- paste(my.line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# "initial" is not a variable - it should be "initials"
 
 
 ## Part 2 - Vector and function practice
